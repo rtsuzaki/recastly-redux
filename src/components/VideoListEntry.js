@@ -1,6 +1,6 @@
 import React from 'react';
 
-var VideoListEntry = ({video, handleVideoListEntryTitleClick}) => (
+var VideoListEntry = ({video}) => (
   <div className="video-list-entry">
     <div className="media-left media-middle">
       <img className="media-object" src={video.snippet.thumbnails.default.url} alt="" />
@@ -16,6 +16,7 @@ var VideoListEntry = ({video, handleVideoListEntryTitleClick}) => (
     </div>
   </div>
 );
+
 
 VideoListEntry.propTypes = {
   video: React.PropTypes.object.isRequired
